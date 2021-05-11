@@ -1,0 +1,1273 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+html {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow: auto;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* ----------banner css ------- */
+
+.banner_main{
+    background: url(../images/bnr.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 93vh;
+    width: 100%;
+    text-align: center ;
+    opacity: 1;  
+
+}
+.banner_main{
+    padding: 0px 70px;
+}
+
+
+.img_logo img{
+    width: 220px;
+    height: auto;
+    background-position: center;
+}
+
+.link_details{
+    padding-top: 5px;
+}
+.link_details li{
+    padding-right: 11px;
+}
+.link_details li a{
+    color: white !important;
+    font-weight: 600 !important;
+    letter-spacing: 0.5px !important;
+    text-transform: capitalize !important;
+    font-size: 17px !important;
+}
+
+.serch_part{
+    padding-top: 15%;
+    text-align: center center;
+}
+
+.serch_part h1{
+    font-size: 36px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    line-height: 50px;
+    text-transform: capitalize;
+    color: white;
+    padding-bottom: 20px;
+}
+
+.serch_part ul li {
+    display: inline;
+    background-color: white;
+    padding: 0px;
+    margin: 0px;
+    padding: 14px 5px;
+    /* width: 200px; */
+}
+
+.serch_part ul li input{
+    outline: none;
+    border: none;
+    background: none;
+    width: 280px;
+}
+
+.serch_part ul li input::placeholder{
+    font-size: 13px;
+}
+
+.serch_part ul li button{
+    border: 1px solid tomato;
+    border-radius: 5px;
+    text-transform: uppercase;
+    color: white;
+    background-color: rgb(252, 70, 38);
+    padding: 5px 20px;
+    outline: none;
+    font-weight: 600;
+}
+
+.serch_part ul li span{
+    border-right: 1px solid silver;
+}
+
+.serch_part ul li:nth-child(1){
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding-left: 15px;
+}
+.serch_part ul li:nth-child(3){
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding-right: 15px;
+}
+
+
+/* ---------booking css-------------- */
+
+.booking_main{
+    padding: 0px 80px;
+}
+
+.main_hedngs{
+    font-size: 33px;
+    font-weight: 700;
+    line-height: 35px;
+    letter-spacing:0.5px;
+    color: #2a2a2a;
+    text-transform: capitalize;
+    /* padding: 5px 0px; */
+}
+
+.booking_main h6{
+    font-size: 18px;
+    font-weight: 700;
+    color: #2a2a2a;
+}
+
+.booking_main p{
+    font-size: 15px;
+    font-weight: 400;
+    color: rgb(122, 122, 122);
+}
+
+/* -------------popular services css---------- */
+
+@media (max-width: 767px) {
+    .carousel-inner .carousel-item > div {
+        display: none;
+    }
+    .carousel-inner .carousel-item > div:first-child {
+        display: block;
+    }
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+}
+
+/* display 3 */
+@media (min-width: 767px) {
+    
+    .carousel-inner .carousel-item-right.active,
+    .carousel-inner .carousel-item-next {
+      transform: translateX(33.333%);
+    }
+    
+    .carousel-inner .carousel-item-left.active, 
+    .carousel-inner .carousel-item-prev {
+      transform: translateX(-33.333%);
+    }
+}
+
+.carousel-inner .carousel-item-right,
+.carousel-inner .carousel-item-left{ 
+  transform: translateX(0);
+}
+
+.card_main{
+    border-radius: 5px;
+    border: 1px solid silver;
+    margin: 0px 5px;
+    background: white;
+    /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+
+}
+
+.card_main img{
+    width: 100%;
+    height: 130px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* border-radius: 5px; */
+}
+
+.card_main h6{
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #2a2a2a;
+    text-transform: capitalize;
+    text-align: center;
+
+}
+
+.prevnxt{
+    border: 1px solid rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0) !important;
+    background: rgb(0, 0, 0) !important;
+    padding: 2px 4px;
+    border-radius: 50%;
+}
+
+.prevnxt i{
+    color: rgb(255, 255, 255) !important;
+    font-size: 18px;
+}
+
+.prevnxt_nxt{
+    margin-right: -20px;
+}
+
+.prevnxt_prv{
+    margin-left: -20px;
+}
+
+/* -----------------feature service css------------ */
+
+.feature{
+    background-color: #F2F2F7;
+    padding: 60px 80px;
+    
+}
+
+.service_card{
+    border: 1px solid silver;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    /* width: 100%; */
+    margin: 15px 10px !important;
+}
+
+.service_card img{
+    width: 100%;
+    height: 150px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.service_card_bdy{
+    padding: 12px;
+}
+
+.service_card_bdy h6{
+    font-size: 16px;
+    font-weight: 600;
+    color: #424242;
+    text-transform: capitalize;
+    margin: 4px 0px;
+}
+
+.service_card_bdy i{
+    font-size: 12px;
+    color: rgb(255, 238, 0);
+}
+
+.service_card_bdy p{
+    font-size: 12px;
+    color: dimgray;
+    font-weight: 400;
+    padding-top: 5px;
+    width: 100%;
+    text-overflow: initial;
+    text-justify: auto;
+}
+
+
+/* ---------------simpe booking section css ---------- */
+
+.simple_pwr h2{
+    font-size: 37px;
+    font-weight: 700;
+    line-height: 50px;
+    text-transform: capitalize;
+    color: #2a2a2a;
+    letter-spacing: 0.5px;
+}
+
+.simple_pwr h3{
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 50px;
+    text-transform: capitalize;
+    color: #2a2a2a;
+    letter-spacing: 0.5px;
+    margin: 0;
+    padding: 0;
+}
+
+.simple_pwr p{
+    font-size: 13px;
+    color: #424242;
+}
+
+/* -------------feature app  bookings ---------- */
+.feature_main{
+    margin: 0px 60px;
+}
+.feature_main img{
+    width: 100%;
+    height: auto;
+}
+
+.feature_text {
+    padding: 110px 10px;
+}
+
+.feature_text h2{
+    font-size: 37px;
+    font-weight: 700;
+    line-height: 50px;
+    text-transform: capitalize;
+    color: #2a2a2a;
+    letter-spacing: 0.5px;
+}
+
+.feature_text p{
+    font-size: 14px;
+    color: rgb(136, 135, 135);
+    font-weight: 500;
+}
+
+
+.feature_text ul li{
+    display: inline-flex;
+    border: 2px solid #2a2a2a;
+    border-radius: 5px;
+    background-color: white;
+    margin-right: 10px;
+    padding: 2px 10px;
+    width: 200px;
+    margin-top: 10px;
+}
+
+.feature_text ul li img{
+    width: 50px;
+    height: 50px;
+}
+
+.feature_text_inner{
+    padding: 5px;
+}
+.feature_text_inner h6{
+    font-size: 17px;
+    color: #2a2a2a;
+    font-weight: 600;
+    /* margin-top: -10px; */
+    padding: 0;
+    margin: 0;
+}
+.feature_text_inner p{
+    font-size: 11px;
+    color: rgb(136, 135, 135);
+    font-weight: 500;
+    padding: 0;
+    margin: 0;
+}
+
+/* ---------------booking software css----------- */
+.sftwrs{
+    background-color: #101928;
+    padding: 70px 80px;
+    
+}
+
+.sftwre_main{
+    padding: 10px 20px;
+}
+
+.sftwre_main h2{
+    font-size: 37px;
+    font-weight: 700;
+    line-height: 50px;
+    text-transform: capitalize;
+    color: white;
+    letter-spacing: 0.5px;
+}
+
+.sftwre_main p{
+    font-size: 14px;
+    color: white;
+    font-weight: 500;
+}
+
+.sftwre_main a{
+    text-decoration: none;
+    outline: none;
+}
+
+.sftwre_main a button{
+    border: 1px solid white;
+    background-color: white;
+    color: black;
+    outline: none;
+    font-weight: 600;
+    text-transform: capitalize;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+
+/* ------------booking management system css ------------ */
+
+.mangment{
+    padding: 10px 40px;
+}
+
+.sftwre_mangmnt{
+    padding: 10px 100px;
+}
+
+.sftwre_mangmnt h2{
+    font-size: 37px;
+    font-weight: 700;
+    line-height: 50px;
+    text-transform: capitalize;
+    color: #2a2a2a;
+    letter-spacing: 0.5px;
+    padding-right: 40px;
+}
+
+.sftwre_mangmnt p{
+    font-size: 13px;
+    color: rgb(139, 138, 138);
+    font-weight: 400;
+}
+
+.sftwre_mangmnt ul li{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 8px;
+    padding: 15px 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 2px 5px;
+    margin: 15px 0px;
+    cursor: pointer;
+
+}
+
+.sftwre_mangmnt ul li i{
+    font-size: 25px;
+    color: black;
+}
+
+.sftwre_mangmnt h5{
+    font-size: 10px;
+    color: dimgray;
+    background: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 2px 5px;
+    padding: 6px 20px;
+    border-radius: 5px;
+    width: 70%;
+}
+
+.mange_imgs{
+    margin-bottom: 20px;
+}
+.mange_imgs img{
+    width: 100%;
+    height: 120px;
+    border-radius: 10px;
+}
+
+.mange_imgs2 img{
+    height: 140px;
+}
+
+.mange_imgs2{
+    margin-top: 30px;
+}
+
+.mange_imgs3 img{
+    height: 270px;
+}
+
+.mange_imgs4 img{
+    height: 155px;
+}
+
+.mange_imgs6 img{
+    height: 155px;
+}
+
+/* -----------footer css -------- */
+
+.footr_main{
+    background-color: #F2F2F7;
+    padding: 60px 80px;
+}
+
+.footer_belw{
+    background-color: #dfdfdf;
+    padding: 0px 80px;
+}
+
+.footer_belw_text{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_belw_text p{
+    font-size: 15px;
+    color: dimgray;
+    font-weight: 500;
+    margin: 0;
+    padding: 8px 0px;
+}
+
+.aboutfooter h5{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 20px;
+    text-transform: capitalize;
+    color: #2a2a2a;
+    letter-spacing: 0.5px;
+    margin-bottom: 8px;
+}
+
+.aboutfooter p{
+    font-size: 14px;
+    font-weight: 400;
+    color: dimgray;
+}
+
+.aboutfooter a{
+    color: tomato;
+    text-decoration: none;
+}
+
+.busness_btn{
+    border: 1px solid white;
+    background: white;
+    padding: 7px 20px;
+    color: black;
+    outline: none !important;
+    border-radius: 8px;
+    width: 170px;
+    font-weight: 500;
+    margin-right: 10px;
+    margin-bottom: 15px;
+}
+
+.cstmr_btn{
+    background: tomato;
+    border: 1px solid tomato;
+    color: white;
+    padding: 7px 20px;
+    outline: none !important;
+    border-radius: 8px;
+    width: 170px;
+    font-weight: 500;
+}
+
+.footer_lines h6{
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 20px;
+    text-transform: capitalize;
+    color: #2a2a2a;
+    letter-spacing: 0.5px;
+    margin-bottom: 10px;
+}
+
+.footer_lines ul li a{
+    font-size: 14px;
+    font-weight: 400;
+    color: dimgray;
+    text-decoration: none;
+}
+
+.footer_lines ul li {
+    padding: 2px;
+}
+.footer_lines ul li a i{
+    font-size: 20px;
+    color: dimgray;
+}
+
+
+
+
+
+
+/* ===================contact page css ============ */
+
+.formpage{
+    background-color: #fafafa;
+    padding: 60px 80px;
+}
+
+.form_heding h4{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 27px;
+    text-transform: capitalize;
+    color: #2a2a2a;
+    letter-spacing: 0.5px;
+    margin-bottom: 20px;
+    padding-left: 16px;
+}
+
+.form_inner label{
+    font-size: 15px;
+    color: dimgray;
+    font-weight: 500;
+    margin-bottom: 6px;
+}
+
+.form_inner .buttons{
+    border: 1px solid silver;
+    border-radius: 5px;
+    background-color: #101928;
+    color: white;
+    font-weight: 600;
+    padding: 8px 35px;
+    outline: none;
+    cursor: pointer;
+}
+
+.form_inner ::placeholder{
+    font-size: 13px;
+}
+
+
+.contact_right h6{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 25px;
+    text-transform: capitalize;
+    color: #2a2a2a;
+    letter-spacing: 0.5px;
+    margin-bottom: 10px;
+}
+
+
+.contact_right p{
+    font-size: 14px;
+    font-weight: 400;
+    color: dimgrey;
+    /* margin: 10px 0px; */
+}
+
+.contact_right a{
+    color: tomato;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+
+
+
+.banner_main_S{
+    padding: 10px 60px;
+}
+
+
+
+
+
+
+
+
+
+
+/* =========responsive pages============ */
+
+@media screen and (max-width: 1024px)  and (min-width: 992px) {
+
+    .banner_main{
+        background: url(../images/bnr.jpg);
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 35vh;
+        width: 100%;
+        text-align: center ;
+        opacity: 1;  
+    
+    }
+    .banner_main{
+        padding: 0px 40px;
+    }
+
+    .booking_main{
+        padding: 0px 40px;
+    }
+    
+    .feature{
+        padding: 40px 40px;
+        
+    }
+    
+
+    
+.service_card img{
+    height: 120px;
+}
+
+.service_card_bdy h6{
+    font-size: 15px;
+}
+
+.service_card_bdy i{
+    font-size: 11px;
+}
+
+.service_card_bdy p{
+    font-size: 11px;
+}
+
+
+.simple_pwr h2{
+    font-size: 32px;
+}
+
+.simple_pwr h3{
+    font-size: 28px;
+}
+
+.simple_pwr p{
+    font-size: 13px;
+}
+
+
+
+.feature_main{
+    margin: 0px 0px;
+}
+.feature_main img{
+    width: 100%;
+    height: auto;
+}
+
+.feature_text {
+    padding: 60px 10px;
+}
+
+.feature_text ul li{
+    width: 180px;
+}
+
+
+.sftwrs{
+    padding: 60px 40px;
+    
+}
+
+
+.sftwre_main h2{
+    font-size: 30px;
+}
+
+.sftwre_main p{
+    font-size: 13px;
+}
+
+
+.mangment{
+    padding: 10px 20px;
+}
+
+.sftwre_mangmnt{
+    padding: 10px 30px;
+}
+
+
+.mange_imgs3 img{
+    height: 240px;
+}
+
+
+.footr_main{
+    padding: 60px 20px;
+}
+
+.footer_belw{
+    padding: 0px 0px;
+}
+
+
+.banner_main_S{
+    padding: 10px 30px;
+}
+
+.formpage{
+    padding: 60px 30px;
+}
+
+
+
+
+
+
+
+}
+
+@media screen and (max-width: 992px) {
+
+
+}
+
+@media screen and (max-width: 992px) and (min-width: 769px) {
+
+
+}
+
+
+@media screen and (max-width: 768px)  {
+ 
+    .banner_main{
+        background: url(../images/bnr.jpg);
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 45vh;
+        width: 100%;
+        text-align: center ;
+        opacity: 1;  
+    
+    }
+
+    .serch_part ul li input{
+        outline: none;
+        border: none;
+        background: none;
+        width: 200px;
+    }
+
+    .bars_s{
+        display: none;
+    }
+
+    .banner_main{
+        padding: 0px 10px;
+    }
+
+    .booking_main{
+        padding: 0px 40px;
+    }
+    
+    .feature{
+        padding: 40px 40px;
+        
+    }
+
+    .sftwrs{
+        padding: 70px 40px;
+        
+    }
+
+    
+.service_card img{
+    height: 120px;
+}
+
+.service_card_bdy h6{
+    font-size: 15px;
+}
+
+.service_card_bdy i{
+    font-size: 11px;
+}
+
+.service_card_bdy p{
+    font-size: 11px;
+}
+
+.simple_pwr h2{
+    font-size: 30px;
+}
+
+.simple_pwr h3{
+    font-size: 26px;
+}
+
+.simple_pwr p{
+    font-size: 12px;
+}
+
+
+.feature_main{
+    margin: 0px 0px;
+}
+.feature_main img{
+    width: 100%;
+    height: auto;
+}
+
+.feature_text {
+    padding: 10px 0px;
+}
+
+.feature_text ul li{
+    width: 180px;
+}
+
+
+
+.feature_text h2{
+    font-size: 30px;
+}
+
+.feature_text p{
+    font-size: 13px;
+}
+
+.feature_text ul li{
+    margin-right: 5px;
+    padding: 2px 6px;
+    width: 140px;
+}
+
+.feature_text ul li img{
+    width: 30px;
+    height: 30px;
+    margin-top: 6px;
+}
+
+.feature_text_inner{
+    padding: 4px;
+}
+.feature_text_inner h6{
+    font-size: 15px;
+}
+.feature_text_inner p{
+    font-size: 10px;
+}
+
+.sftwre_main{
+    padding: 0px 0px;
+}
+
+.sftwre_main h2{
+    font-size: 22px;
+    line-height: 28px;
+}
+
+.sftwre_main p{
+    font-size: 12px;
+}
+
+
+
+.mangment{
+    padding: 10px 10px;
+}
+
+.sftwre_mangmnt{
+    padding: 10px 10px;
+}
+
+.sftwre_mangmnt h2{
+    font-size: 28px;
+    line-height: 36px;
+    padding-right: 0px;
+}
+
+.mange_imgs3 img{
+    height: 200px;
+}
+.mange_imgs4 img{
+    height: 120px;
+}
+.mange_imgs6 img{
+    height: 120px;
+}
+
+.sftwre_mangmnt ul li h6{
+    font-size: 13px;
+}
+
+.sftwre_mangmnt h5{
+    font-size: 9px;
+}
+
+.sftwre_mangmnt{
+    margin-bottom: 30px;
+}
+
+.footr_main{
+    padding: 40px 20px;
+}
+
+.footer_belw{
+    padding: 0px 20px;
+    text-align: center;
+}
+
+.footer_lines h6{
+    font-size: 16px;
+}
+
+
+.footer_liness{
+    margin-top: 30px;
+}
+
+.banner_main_S{
+    padding: 10px 10px;
+}
+
+.formpage{
+    padding: 50px 10px;
+}
+
+
+}   
+
+
+
+
+@media screen and (max-width: 414px) and (min-width: 321px){
+    .banner_main{
+        padding: 0px 0px;
+    }
+    .img_logo img{
+        width: 180px;
+        height: auto;
+        background-position: center;
+    }
+
+    .banner_main{
+        background: url(../images/bnr.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 60vh;
+        width: 100%;
+        text-align: center ;
+        opacity: 1;  
+    
+    }
+    .serch_part ul li input{
+        outline: none;
+        border: none;
+        background: none;
+        width: 110px;
+    }
+
+    .serch_part ul li button{
+        border: 1px solid tomato;
+        border-radius: 5px;
+        text-transform: uppercase;
+        color: white;
+        background-color: rgb(252, 70, 38);
+        padding: 5px 10px;
+        outline: none;
+        font-weight: 600;
+    }
+
+    .booking_main{
+        padding: 0px 20px;
+    }
+    .main_hedngs{
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 35px;
+        letter-spacing:0.5px;
+        color: #2a2a2a;
+        text-transform: capitalize;
+        /* padding: 5px 0px; */
+    }
+    
+    .booking_main h6{
+        font-size: 16px;
+        font-weight: 700;
+        color: #2a2a2a;
+    }
+    
+    .booking_main p{
+        font-size: 12px;
+        font-weight: 400;
+        color: rgb(122, 122, 122);
+    }
+
+    .feature{
+        padding: 40px 20px;
+        
+    }
+    .sftwrs{
+        padding: 50px 20px;
+        
+    }
+
+    .img_dwn{
+        padding-top: 25px;
+    }
+
+    .footer_belw_text{
+        display: block;
+    }
+
+    .banner_main_S{
+        padding: 5px;
+    }
+
+    .formpage{
+        padding: 20px 8px;
+    }
+
+    .imgs_resp img{
+        height: 200px !important;
+    }
+
+
+
+
+}
+
+
+@media screen and (max-width: 375px){
+
+    .banner_main{
+        background: url(../images/bnr.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 60vh;
+        width: 100%;
+        text-align: center ;
+        opacity: 1;  
+    
+    }
+    .serch_part ul li input{
+        outline: none;
+        border: none;
+        background: none;
+        width: 90px;
+    }
+    .img_dwn{
+        padding-top: 25px;
+    }
+
+    .banner_main_S{
+        padding: 5px;
+    }
+
+    .formpage{
+        padding: 20px 8px;
+    }
+    .footer_belw_text{
+        display: block;
+    }
+
+    .imgs_resp img{
+        height: 200px !important;
+    }
+
+}
+
+
+
+@media screen and (max-width: 320px){
+    .banner_main{
+        padding: 0px 0px;
+    }
+
+    .img_logo img{
+        width: 150px;
+        height: auto;
+        background-position: center;
+    }
+
+    .banner_main{
+        background: url(../images/bnr.jpg);
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 75vh;
+        width: 100%;
+        text-align: center ;
+        opacity: 1;  
+    
+    }
+    .serch_part ul li input{
+        outline: none;
+        border: none;
+        background: none;
+        width: 80px;
+    }
+    .serch_part ul li button{
+        border: 1px solid tomato;
+        border-radius: 5px;
+        text-transform: uppercase;
+        color: white;
+        background-color: rgb(252, 70, 38);
+        padding: 5px 10px;
+        outline: none;
+        font-weight: 600;
+        font-size: 12px;
+    }
+    .booking_main{
+        padding: 0px 5px;
+    }
+    .feature{
+        padding: 40px 10px;
+        
+    }
+    .sftwrs{
+        padding: 40px 10px;
+        
+    }
+
+    .feature_text ul li{
+        margin-right: 5px;
+        padding: 2px 6px;
+        width: 120px;
+    }
+    
+    .feature_text ul li img{
+        width: 25px;
+        height: 25px;
+        margin-top: 3px;
+    }
+    
+    .feature_text_inner{
+        padding: 3px;
+    }
+    .feature_text_inner h6{
+        font-size: 12px;
+    }
+    .feature_text_inner p{
+        font-size: 8px;
+    }
+
+    .img_dwn{
+        padding-top: 25px;
+    }
+
+
+    .banner_main_S{
+        padding: 5px;
+    }
+
+    .formpage{
+        padding: 20px 8px;
+    }
+
+    .footer_belw_text{
+        display: block;
+    }
+    .imgs_resp img{
+        height: 200px !important;
+    }
+}
+
+
+
+
+
